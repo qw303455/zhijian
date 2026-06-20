@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+  <external-path
+    name="external_files"
+    path="." />
+    <cache-path
+    name="cache_files"
+    path="." />
+    <!--根据需要添加其他路径-->
+</paths>
