@@ -1,0 +1,17 @@
+<!--允许安装应用-->
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+<!--允许APK在外部存储中安装-->
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--允许访问网络-->
+<uses-permission android:name="android.permission.INTERNET" />
+<!--允许访问网络状态-->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<provider
+    android:name="androidx.core.content.FileProvider"
+    android:authorities="${applicationId}.fileprovider"
+    android:exported="false"
+    android:grantUriPermissions="true">
+    <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+</provider>
